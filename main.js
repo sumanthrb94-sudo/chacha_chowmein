@@ -97,6 +97,13 @@ function updateAllUIs() {
   const totalItems = getCartTotalItems();
   cartCountEl.textContent = totalItems;
   
+  // Hide cart button completely when empty
+  if (totalItems === 0) {
+    cartBtn.classList.add('hidden-cart');
+  } else {
+    cartBtn.classList.remove('hidden-cart');
+  }
+  
   // Render Cart Modal
   if (totalItems === 0) {
     cartItemsContainer.innerHTML = '<p style="text-align:center; color:#888;">Your cart is empty.</p>';
