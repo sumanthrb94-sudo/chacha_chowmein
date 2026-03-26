@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cha Cha Chowmein | Authentic Asian Cuisine</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;900&family=Outfit:wght@300;400;600&family=Shojumaru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="glass-nav">
+      <div class="nav-container">
+        <a href="#home" class="logo-link">
+          <div class="logo">
+            <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="45" fill="none" stroke="var(--primary-red)" stroke-width="4" stroke-dasharray="10 4"/>
+              <path d="M30 60 Q 50 80 70 60" fill="var(--primary-red)"/>
+              <line x1="25" y1="20" x2="80" y2="70" stroke="var(--primary-red)" stroke-width="6" stroke-linecap="round"/>
+              <line x1="35" y1="20" x2="70" y2="75" stroke="var(--primary-red)" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="brand-text">Cha Cha <span class="highlight">Chowmein</span></span>
+          </div>
+        </a>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#full-menu">Menu</a></li>
+          <li><a href="#reservation" class="btn-primary">Reserve a Table</a></li>
+        </ul>
+        <div class="mobile-menu-btn" id="mobile-menu-btn">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+      <div class="hero-bg">
+        <img src="./public/hero.png" alt="Delicious Chowmein" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content animate-on-scroll">
+        <div class="glass-panel">
+          <h2 class="hero-title">A Symphony of Asian Flavors</h2>
+          <p class="hero-subtitle">Authentic recipes. Unforgettable experiences.</p>
+          <a href="#menu" class="btn-primary btn-large">Explore the Menu</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="about-container animate-on-scroll staggered">
+        <div class="about-text glass-card">
+          <h3 class="section-badge">Our Story</h3>
+          <h2 class="section-title">The Heart of Secunderabad</h2>
+          <p>
+            Nestled in the vibrant Street Number 8, Cha Cha Chowmein brings the 
+            culinary traditions of the far east right to your table. Our master chefs 
+            blend age-old techniques with a modern flair, crafting dishes that are not 
+            just food, but a journey of the senses.
+          </p>
+          <div class="location-highlight">
+            <span class="dot"></span>
+            Secunderabad, Street No. 8
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="./public/ambiance.png" alt="Restaurant Ambiance" loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Showcase Section -->
+    <section id="menu" class="menu-section">
+      <div class="menu-header animate-on-scroll">
+        <h2 class="section-title centered text-light">Signature Selection</h2>
+        <p class="section-subtitle centered">Curated masterpieces to elevate your dining experience.</p>
+      </div>
+      
+      <div class="menu-grid">
+        <div class="menu-card glass-card animate-on-scroll staggered">
+          <div class="card-img-wrapper">
+            <img src="./public/dimsum.png" alt="Dim Sum Showcase" loading="lazy" decoding="async" />
+          </div>
+          <div class="card-content">
+            <h4>Emperor's Dim Sum</h4>
+            <p>Delicate hand-wrapped parcels filled with prime cuts and aromatics.</p>
+            <span class="price">₹450</span>
+          </div>
+        </div>
+        
+        <div class="menu-card glass-card animate-on-scroll staggered" style="transition-delay: 100ms;">
+          <div class="card-img-wrapper">
+            <img src="./public/hero.png" alt="Signature Chowmein" loading="lazy" decoding="async" />
+          </div>
+          <div class="card-content">
+            <h4>Wok-Tossed Truffle Chowmein</h4>
+            <p>Our signature noodles tossed with black truffle oil and farm-fresh ingredients.</p>
+            <span class="price">₹650</span>
+          </div>
+        </div>
+        
+        <div class="menu-card glass-card animate-on-scroll staggered" style="transition-delay: 200ms;">
+          <div class="card-img-wrapper">
+            <div class="img-placeholder">Wait for our specials</div>
+          </div>
+          <div class="card-content">
+            <h4>Szechuan Fire Platter</h4>
+            <p>A spicy, numbing symphony featuring premium tofu, meats, and Szechuan peppercorns.</p>
+            <span class="price">₹850</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Full Menu Section -->
+    <section id="full-menu" class="full-menu-section">
+      <div class="menu-header animate-on-scroll">
+        <h2 class="section-title centered text-light">Our Complete Menu</h2>
+        <p class="section-subtitle centered">Authentic traditional flavors, crafted to perfection.</p>
+      </div>
+
+      <div class="menu-categories animate-on-scroll">
+        <!-- category: Soups -->
+        <div class="menu-category glass-panel">
+          <h3>Soups</h3>
+          <div class="menu-list">
+            <div class="menu-item"><span>Sweet Corn (Veg/Chicken)</span> <span>₹99 / ₹109</span></div>
+            <div class="menu-item"><span>Manchow (Veg/Chicken/Seafood)</span> <span>₹99 / ₹109 / ₹119</span></div>
+            <div class="menu-item"><span>Hot & Sour (Veg/Chicken/Seafood)</span> <span>₹99 / ₹109 / ₹119</span></div>
+            <div class="menu-item"><span>Lemon Coriender (Veg/Chicken/Seafood)</span> <span>₹99 / ₹109 / ₹119</span></div>
+            <div class="menu-item"><span>Tomkha Soup (Veg/Chicken/Seafood)</span> <span>₹99 / ₹119 / ₹129</span></div>
+          </div>
+        </div>
+        
+        <!-- category: Starters -->
+        <div class="menu-category glass-panel">
+          <h3>Starters (Veg & Paneer)</h3>
+          <div class="menu-list">
+            <div class="menu-item"><span>Veg Manchuria / 65</span> <span>₹139</span></div>
+            <div class="menu-item"><span>Paneer Manchuria / 65</span> <span>₹179</span></div>
+            <div class="menu-item"><span>Chilli Paneer / Garlic Paneer</span> <span>₹189</span></div>
+            <div class="menu-item"><span>Dragon Paneer</span> <span>₹199</span></div>
+            <div class="menu-item"><span>Crispy Baby Corn</span> <span>₹169</span></div>
+            <div class="menu-item"><span>Mushroom Manchuria / 65</span> <span>₹179</span></div>
+          </div>
+        </div>
+
+        <!-- category: Non-Veg Starters -->
+        <div class="menu-category glass-panel">
+          <h3>Starters (Chicken & Egg)</h3>
+          <div class="menu-list">
+            <div class="menu-item"><span>Egg Manchuria / 65 / Chilli</span> <span>₹159</span></div>
+            <div class="menu-item"><span>Chicken Manchuria / 65</span> <span>₹179</span></div>
+            <div class="menu-item"><span>Chilli Chicken / Schezwan</span> <span>₹189</span></div>
+            <div class="menu-item"><span>Dragon Chicken</span> <span>₹199</span></div>
+            <div class="menu-item"><span>Chicken Lollipop (5 pcs)</span> <span>₹189</span></div>
+          </div>
+        </div>
+        
+        <!-- category: Seafood -->
+        <div class="menu-category glass-panel">
+          <h3>Seafood Starters</h3>
+          <div class="menu-list">
+            <div class="menu-item"><span>Manchuria (Prawns / Fish)</span> <span>₹209 / ₹199</span></div>
+            <div class="menu-item"><span>65 (Prawns / Fish)</span> <span>₹209 / ₹199</span></div>
+            <div class="menu-item"><span>Schezwan (Prawns / Fish)</span> <span>₹209 / ₹199</span></div>
+            <div class="menu-item"><span>Chilli (Prawns / Fish)</span> <span>₹209 / ₹209</span></div>
+          </div>
+        </div>
+
+        <!-- category: Momos & Rolls -->
+        <div class="menu-category glass-panel">
+          <h3>Momo's & Rolls</h3>
+          <div class="menu-list">
+            <div class="menu-item"><span>Steam Momo (Veg / Chicken)</span> <span>₹139 / ₹149</span></div>
+            <div class="menu-item"><span>Fry Momo (Veg / Chicken)</span> <span>₹149 / ₹159</span></div>
+            <div class="menu-item"><span>Tandoori Momo (Veg / Chicken)</span> <span>₹159 / ₹169</span></div>
+            <div class="menu-item"><span>Veg Roll / Chicken Roll</span> <span>₹149 / ₹159</span></div>
+            <div class="menu-item"><span>Shanghai Roll (Veg / Chicken)</span> <span>₹159 / ₹169</span></div>
+          </div>
+        </div>
+
+        <!-- category: Mains & Beverages -->
+        <div class="menu-category glass-panel">
+          <h3>Mains & Beverages</h3>
+          <div class="menu-list">
+            <div class="menu-item"><span>American Chopsuey (Veg / Non-Veg)</span> <span>₹199 / ₹219</span></div>
+            <div class="menu-item"><span>Thai Red/Green Curry (Veg/Non-Veg)</span> <span>₹189 / ₹199</span></div>
+            <div class="menu-item"><span>Virgin Mojito / Blue Lagoon</span> <span>₹109</span></div>
+            <div class="menu-item"><span>Peach Ice Tea</span> <span>₹129</span></div>
+            <div class="menu-item"><span>Fresh Lime Soda</span> <span>₹109</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation-section">
+      <div class="container animate-on-scroll">
+        <h2 class="section-title" style="text-align: center; margin-bottom: 3rem;">Reserve a Table</h2>
+        <div class="reservation-card glass-panel">
+          <form id="reservation-form" class="reservation-form">
+            <div class="form-group">
+              <label for="res-name">Full Name</label>
+              <input type="text" id="res-name" required placeholder="John Doe">
+            </div>
+            <div class="form-group">
+              <label for="res-guests">Number of Guests</label>
+              <select id="res-guests" required>
+                <option value="1">1 Person</option>
+                <option value="2" selected>2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 People</option>
+                <option value="6+">6+ People</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="res-date">Date</label>
+              <input type="date" id="res-date" required>
+            </div>
+            <div class="form-group">
+              <label for="res-time">Time</label>
+              <input type="time" id="res-time" required>
+            </div>
+            <button type="submit" class="btn-primary" style="grid-column: 1 / -1; margin-top: 1rem; width: 100%;">Confirm via WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <div class="logo">
+            <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="45" fill="none" stroke="var(--primary-red)" stroke-width="4" stroke-dasharray="10 4"/>
+              <path d="M30 60 Q 50 80 70 60" fill="var(--primary-red)"/>
+              <line x1="25" y1="20" x2="80" y2="70" stroke="var(--primary-red)" stroke-width="6" stroke-linecap="round"/>
+              <line x1="35" y1="20" x2="70" y2="75" stroke="var(--primary-red)" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="brand-text">Cha Cha <span class="highlight">Chowmein</span></span>
+          </div>
+          <p>Authenticity in every bite.</p>
+        </div>
+        <div class="footer-contact">
+          <h4>Visit Us</h4>
+          <p>Street Number 8</p>
+          <p>Secunderabad, Telangana</p>
+          <p>Bookings: +91 98765 43210</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Cha Cha Chowmein. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Floating Cart Button -->
+    <div id="cart-btn" class="cart-btn glass-panel">
+      🛒 <span id="cart-count" class="cart-count">0</span>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+      <div class="cart-content glass-panel">
+        <div class="cart-header">
+          <h2>Your Order</h2>
+          <button id="close-cart" class="close-btn">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+          <p style="text-align:center; color:#888;">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+          <div class="cart-total">Total: <span id="total-price">₹0</span></div>
+          <button id="checkout-btn" class="btn-primary" style="width: 100%">Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item Detail Overlay -->
+    <div id="item-detail-overlay" class="item-detail-overlay">
+      <div class="item-detail-card glass-panel" style="padding: 0;">
+        <button id="detail-close-btn" class="detail-close-btn">&times;</button>
+        <div class="detail-img-wrapper">
+          <div class="detail-img-blur">
+            <span class="detail-img-label">Signature Selection</span>
+          </div>
+        </div>
+        <div class="detail-body">
+          <h3 id="detail-name" class="detail-name">Item Name</h3>
+          <p class="detail-desc">Authentic flavors crafted to perfection. Made fresh to order with premium ingredients and our signature blends.</p>
+          <div class="detail-footer">
+            <div id="detail-price" class="detail-price-tag">₹0</div>
+            <div class="detail-btn-container">
+              <div id="detail-add-area"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
